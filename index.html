@@ -7,18 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangle Fun</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <ul class="lists">
-            <li><a class="link" href="./isTriangle.html">Is Triangle</a></li>
-            <li><a class="link" href="#">Quiz</a></li>
-            <li><a class="link" href="#">Hypotenuse</a></li>
-            <li><a class="link" href="#">Area</a></li>
-        </ul>
-    </nav>
+    <div class="pagewrap">
+        <nav class="navbar">
+            <ul class="lists">
+                <li><a class="link" href="/">Is Triangle</a></li>
+                <li><a class="link" href="#">Quiz</a></li>
+                <li><a class="link" href="#">Hypotenuse</a></li>
+                <li><a class="link" href="#">Area</a></li>
+            </ul>
+        </nav>
+
+        <div class="main sides-div">
+            <h1>Is Triangle?</h1>
+            <p>Enter the three angles of a triangle, we will tell whether it forms a triangle or not?</p>
+            <label for="angleFirst">First angle</label><br>
+            <input class="input-field" id="angleFirst" type="number">
+            <br><br>
+            <label for="angleSecond">Second angle</label><br>
+            <input class="input-field" id="angleSecond" type="number">
+            <br><br>
+            <label for="angleThird">Third angle</label><br>
+            <input class="input-field" id="angleThird" type="number">
+            <br>
+            <button class="btn">Check</button>
+
+            <div class="output">
+                <p class="opt">Oops! this would not make a triangle.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-div">
+                <p>
+                    &lt;&#47;&gt; by
+                    <a href="https://piyushahir28.netlify.app" target="_blank" class="with-para"> Piyush</a>
+                    <br>
+                    <a href="https://github.com/piyushahir28" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/piyushahir28" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/piyushahir28" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
 
     <script src="./app.js"></script>
 </body>
