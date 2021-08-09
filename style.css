@@ -43,6 +43,10 @@ body {
     color: var(--white);
 }
 
+.active {
+    font-weight: bold;
+}
+
 li :hover {
     color: var(--projects);
 }
@@ -86,7 +90,7 @@ li :hover {
     border-radius: 15px;
 }
 
-.sides-div button {
+.btn {
     background-color: var(--primary-color);
     border: 0px;
     border-radius: 10px;
@@ -106,6 +110,43 @@ li :hover {
 
 .output {
     display: none;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.heading h1 {
+    color: var(--primary-color);
+}
+
+.heading p {
+    font-size: 22px;
+}
+
+.question-container {
+    box-sizing: border-box;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 18px;
+}
+
+.question-container p {
+    margin-bottom: 0.5rem;
+}
+
+.question-container label {
+    padding-inline-start: 0rem;
+    padding-inline: 0.5rem;
+    cursor: pointer;
+}
+
+.question-container input {
+    cursor: pointer;
+    margin: 0rem 0.4rem;
 }
 
 
