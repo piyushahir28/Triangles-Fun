@@ -29,7 +29,7 @@
                 <p>For each correct answer you will get a +1 point.</p>
             </div>
 
-            <form id="quiz-form" name="quiz-form">
+            <form class="quiz-form">
                 <div class="question-container">
                     <p>1. If a triangle has angles 1350, 150, 300. Is it an obtuse triangle?</p>
                     <label><input name="question1" type="radio" value="Yes">Yes</label>
@@ -75,9 +75,9 @@
                 </div>
                 <div class="question-container">
                     <p>9. The perimeter of an equilateral triangle is 15cm. What is the length of one side?</p>
-                    <label><input name="question9" type="radio" value="15 cm">15 cm</label>
-                    <label><input name="question9" type="radio" value="45cm">45 cm</label>
-                    <label><input name="question9" type="radio" value="5 cm">5 cm</label>
+                    <label><input name="question9" type="radio" value="15cm">15cm</label>
+                    <label><input name="question9" type="radio" value="45cm">45cm</label>
+                    <label><input name="question9" type="radio" value="5cm">5cm</label>
                 </div>
                 <div class="question-container">
                     <p>10. If a triangle has sides of 2cm, 3cm, 4cm, what is the type of triangle?</p>
@@ -87,7 +87,7 @@
                 </div>
             </form>
             <div style="text-align: center;">
-                <button class="btn">Submit</button>
+                <button id="submit-answer-btn" class="btn">Submit</button>
             </div>
             <div class="output">
                 <p style="text-align: center; margin: 2rem 0.5rem;" class="opt">Oops! this would not make a triangle.</p>
