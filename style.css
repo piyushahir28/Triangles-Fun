@@ -18,13 +18,22 @@
 }
 
 body {
+    background-image: url(./triangle.png);
+    background-size: cover;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
+.navbar .icon {
+    font-size: 25px;
+    color: var(--white);
+    display: none;
+}
+
 .navbar {
+    box-sizing: border-box;
     background-color: var(--primary-color);
-    padding: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 0rem;
 }
 
 .lists {
@@ -35,7 +44,8 @@ body {
     font-size: 25px;
     padding-inline: 2rem;
     padding-inline-start: 0rem;
-    display: inline;
+    display: block;
+    float: left;
 }
 
 .link {
@@ -44,11 +54,42 @@ body {
 }
 
 .active {
-    font-weight: bold;
+    font-weight: 700;
+}
+
+.logo {
+    color: #fdd9b0;
+    font-weight: 600;
 }
 
 li :hover {
     color: var(--projects);
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar li:not(:first-child) {
+        display: none;
+    }
+    .navbar .icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 
 .main {
