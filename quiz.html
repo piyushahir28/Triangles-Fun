@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Fun</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <div class="pagewrap">
+        <nav class="navbar">
+            <ul class="lists">
+                <li><a class="link" href="./index.html">Is Triangle</a></li>
+                <li><a class="link active" href="/">Quiz</a></li>
+                <li><a class="link" href="#">Hypotenuse</a></li>
+                <li><a class="link" href="#">Area</a></li>
+            </ul>
+        </nav>
+
+        <div class="main quiz-class">
+
+            <div class="heading">
+                <h1>Triangle Quiz</h1>
+                <p>For each correct answer you will get a +1 point.</p>
+            </div>
+
+            <form id="quiz-form" name="quiz-form">
+                <div class="question-container">
+                    <p>1. If a triangle has angles 1350, 150, 300. Is it an obtuse triangle?</p>
+                    <label><input name="question1" type="radio" value="Yes">Yes</label>
+                    <label><input name="question1" type="radio" value="No">No</label>
+                </div>
+                <div class="question-container">
+                    <p>2. If a triangle has angles 1150, 250, 400. Is it an acute triangle?</p>
+                    <label><input name="question2" type="radio" value="Yes">Yes</label>
+                    <label><input name="question2" type="radio" value="No">No</label>
+                </div>
+                <div class="question-container">
+                    <p>3. If a triangle has angles 900, 600, 300. Is it a right angle triangle?</p>
+                    <label><input name="question3" type="radio" value="Yes">Yes</label>
+                    <label><input name="question3" type="radio" value="No">No</label>
+                </div>
+                <div class="question-container">
+                    <p>4. A triangle has angles 600, 600, 600. Is it an equilateral triangle?</p>
+                    <label><input name="question4" type="radio" value="Yes">Yes</label>
+                    <label><input name="question4" type="radio" value="No">No</label>
+                </div>
+                <div class="question-container">
+                    <p>5. If a triangle has angles 250, 750, 800. Is it an acute triangle?</p>
+                    <label><input name="question5" type="radio" value="Yes">Yes</label>
+                    <label><input name="question5" type="radio" value="No">No</label>
+                </div>
+                <div class="question-container">
+                    <p>6. If a triangle has 2 sides with equal lengths and 750 angle between them. What is the type of triangle?</p>
+                    <label><input name="question6" type="radio" value="Equilateral">Equilateral</label>
+                    <label><input name="question6" type="radio" value="Isosceles">Isosceles</label>
+                    <label><input name="question6" type="radio" value="Right angled">Right anled</label>
+                </div>
+                <div class="question-container">
+                    <p>7. If a triangle has 2 angles of 750. What is the measure of third angle in degree?</p>
+                    <label><input name="question7" type="radio" value="25">25</label>
+                    <label><input name="question7" type="radio" value="30">30</label>
+                    <label><input name="question7" type="radio" value="15">15</label>
+                </div>
+                <div class="question-container">
+                    <p>8. If a triangle has 2 sides with equal lengths and 600 angle between them. What is the type of triangle?</p>
+                    <label><input name="question8" type="radio" value="Equilateral">Equilateral</label>
+                    <label><input name="question8" type="radio" value="Isosceles">Isosceles</label>
+                    <label><input name="question8" type="radio" value="Both">Both</label>
+                </div>
+                <div class="question-container">
+                    <p>9. The perimeter of an equilateral triangle is 15cm. What is the length of one side?</p>
+                    <label><input name="question9" type="radio" value="15 cm">15 cm</label>
+                    <label><input name="question9" type="radio" value="45cm">45 cm</label>
+                    <label><input name="question9" type="radio" value="5 cm">5 cm</label>
+                </div>
+                <div class="question-container">
+                    <p>10. If a triangle has sides of 2cm, 3cm, 4cm, what is the type of triangle?</p>
+                    <label><input name="question10" type="radio" value="Equilateral">Equilateral</label>
+                    <label><input name="question10" type="radio" value="Isosceles">Isosceles</label>
+                    <label><input name="question10" type="radio" value="Scalene">Scalene</label>
+                </div>
+            </form>
+            <div style="text-align: center;">
+                <button class="btn">Submit</button>
+            </div>
+            <div class="output">
+                <p style="text-align: center; margin: 2rem 0.5rem;" class="opt">Oops! this would not make a triangle.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-div">
+                <p>
+                    &lt;&#47;&gt; by
+                    <a href="https://piyushahir28.netlify.app" target="_blank" class="with-para"> Piyush</a>
+                    <br>
+                    <a href="https://github.com/piyushahir28" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/piyushahir28" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/piyushahir28" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./quiz.js"></script>
+</body>
+
+</html>
