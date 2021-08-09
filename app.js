@@ -1,3 +1,12 @@
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+
 var angle = document.querySelectorAll(".input-field");
 var check = document.querySelector(".btn");
 var showMessage = document.querySelector(".opt");
