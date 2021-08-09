@@ -11,6 +11,12 @@
     --projects: #06395896;
 }
 
+.pagewrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -39,4 +45,98 @@ body {
 
 li :hover {
     color: var(--projects);
+}
+
+.main {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    flex-grow: 1;
+}
+
+.sides-div {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.sides-div h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.sides-div p {
+    text-align: justify;
+    font-size: 20px;
+    margin: 2rem 1rem;
+}
+
+.sides-div label {
+    text-align: center;
+    font-size: 18px;
+    margin: 2rem;
+}
+
+.sides-div input {
+    padding: 0.5rem;
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    margin: auto;
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+}
+
+.sides-div button {
+    background-color: var(--primary-color);
+    border: 0px;
+    border-radius: 10px;
+    color: var(--white);
+    padding: 0.5rem;
+    font-size: 18px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.sides-div .opt {
+    padding: 0.5rem, 0rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+}
+
+.output {
+    display: none;
+}
+
+
+/* Footer */
+
+.footer {
+    margin: 1rem 2rem 0rem 2rem;
+    border-top: 2px solid var(--primary-color);
+}
+
+.footer div {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.footer p {
+    padding-top: 0.5rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer a {
+    padding-inline: 1rem;
+    font-size: 29px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer .with-para {
+    padding-inline: 0rem;
+    font-size: 20px;
+    color: var(--primary-color);
+    text-decoration: none;
 }
