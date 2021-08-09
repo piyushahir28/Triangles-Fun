@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Fun</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <div class="pagewrap">
+        <nav class="navbar">
+            <ul class="lists">
+                <li><a class="link" href="./index.html">Is Triangle</a></li>
+                <li><a class="link" href="./quiz.html">Quiz</a></li>
+                <li><a class="link active" href="#">Hypotenuse</a></li>
+                <li><a class="link" href="./area.html">Area</a></li>
+            </ul>
+        </nav>
+
+        <div class="main sides-div">
+            <h1>Find Hypotenuse</h1>
+            <p style="text-align: center;">Enter the lengths of sides of right angle triangle</p>
+            <label for="base">Base(a)</label><br>
+            <input class="input-field" id="base" type="number">
+            <br><br>
+            <label for="height">Height(b)</label><br>
+            <input class="input-field" id="height" type="number">
+            <br>
+            <button class="btn">Submit</button>
+
+            <div class="hyp-output">
+                <p class="hyp-opt">Hypotenuse = √((base)2 + (height)2) (or) √(a2 + b2).</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-div">
+                <p>
+                    &lt;&#47;&gt; by
+                    <a href="https://piyushahir28.netlify.app" target="_blank" class="with-para"> Piyush</a>
+                    <br>
+                    <a href="https://github.com/piyushahir28" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/piyushahir28" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/piyushahir28" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        var angle = document.querySelectorAll(".input-field");
+        var check = document.querySelector(".btn");
+        var showMessage = document.querySelector(".hyp-opt");
+
+        function clickHandler() {
+            var base = Number(angle[0].value);
+            var height = Number(angle[1].value);
+
+            if (base > 0 && height > 0) {
+                var hyp = Math.sqrt((base * base) + (height * height));
+                hyp = hyp.toFixed(2);
+                showMessage.innerHTML = "Hypotenuse = " + hyp;
+
+            } else {
+                showMessage.innerHTML = "Please, enter some values in the fields.";
+            }
+        }
+
+        check.addEventListener('click', clickHandler);
+    </script>
+</body>
+
+</html>
